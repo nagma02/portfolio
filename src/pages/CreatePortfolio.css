@@ -1,0 +1,133 @@
+/* CREATE PAGE STYLE */
+.create {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back {
+  background: white;
+  color: #667eea;
+  padding: 12px 24px;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.back:hover {
+  background: transparent;
+  color: white;
+  transform: translateX(-5px);
+}
+
+.create h1 {
+  color: white;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.create .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.create form {
+  background: white;
+  padding: 50px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.form-section {
+  margin-bottom: 35px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+}
+
+.form-section h3 {
+  color: #667eea;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.create input,
+.create textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: Arial;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.create input:focus,
+.create textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+  background: white;
+}
+
+.create button[type="submit"] {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.create button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create h1 {
+    font-size: 2em;
+  }
+  
+  .create form {
+    padding: 30px 20px;
+  }
+  
+  .row {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-section h3 {
+    font-size: 1.3em;
+  }
+}
